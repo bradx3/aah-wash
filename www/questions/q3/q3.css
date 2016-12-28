@@ -1,0 +1,112 @@
+#q3 .base-character, #q3 .success-character, #q3 .fail-character {
+  bottom: 25px;
+  left: 80px;
+  width: 165px;
+  z-index: 10;
+}
+
+#q3 .base-character {
+  display: block;
+  z-index: 10;
+}
+
+#q3 .success-character,
+#q3 .fail-character,
+#q3 .star1, #q3 .star2, #q3 .star3, #q3 .star4 {
+  display: none;
+}
+
+#q3 .bacteria1 {
+  bottom: 95px;
+  left: 260px;
+  width: 45px;
+  z-index: 20;
+}
+
+#q3 .bacteria2 {
+  bottom: 150px;
+  left: 25px;
+  width: 45px;
+  z-index: 20;
+}
+
+#q3 .dirt1 {
+  bottom: 128px;
+  left: 60px;
+  width: 35px;
+  z-index: 20;
+}
+
+#q3 .dirt2 {
+  bottom: 95px;
+  left: 220px;
+  width: 35px;
+  z-index: 20;
+}
+
+#q3.marked.correct .dirt1,
+#q3.marked.correct .dirt2 {
+  display: none;
+}
+
+#q3.marked.correct .base-character {
+  display: none;
+}
+
+#q3.marked.correct .success-character {
+  display: block;
+  width: 210px;
+}
+
+#q3.marked.correct .bacteria1 {
+  bottom: 25px;
+  transform: rotate(190deg);
+}
+
+#q3.marked.correct .bacteria2 {
+  bottom: 30px;
+  transform: rotate(90deg);
+}
+
+#q3.marked.correct .star1 {
+  bottom: 300px;
+  display: block;
+  left: 20px;
+  transform: rotate(45deg);
+  width: 50px;
+}
+
+#q3.marked.correct .star2 {
+  bottom: 385px;
+  display: block;
+  left: 50px;
+  transform: rotate(15deg);
+  width: 75px;
+}
+
+#q3.marked.correct .star3 {
+  bottom: 400px;
+  display: block;
+  left: 260px;
+  transform: rotate(5deg);
+  width: 40px;
+}
+
+#q3.marked.correct .star4 {
+  bottom: 290px;
+  display: block;
+  left: 325px;
+  transform: rotate(5deg);
+  width: 40px;
+}
+
+#q3.marked.incorrect .base-character {
+  display: none;
+}
+
+#q3.marked.incorrect .fail-character {
+  bottom: 25px;
+  left: 99px;
+  display: block;
+  width: 145px;
+}

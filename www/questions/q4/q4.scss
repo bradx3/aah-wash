@@ -1,0 +1,63 @@
+#q4 {
+  .base-character, .success-character, .fail-character {
+    bottom: 20px;
+    left: 30px;
+    width: 350px;
+    z-index: 10;
+  }
+  .base-character {
+    display: block;
+  }
+  .success-character,
+  .fail-character,
+  .stove,
+  .star1, .star2, .star3 {
+    display: none;
+  }
+  .house {
+    bottom: 60px;
+    width: 460px;
+  }
+
+  &.marked.correct {
+    .base-character,
+    .house {
+      display: none;
+    }
+    .success-character {
+      bottom: 4px;
+      display: block;
+      left: 0;
+      width: 250px;
+    }
+    .star1 {
+      bottom: 265px;
+      display: block;
+      left: 130px;
+      transform: rotate(45deg);
+      width: 50px;
+    }
+    .star2 {
+      bottom: 275px;
+      display: block;
+      left: 225px;
+      transform: rotate(15deg);
+      width: 75px;
+    }
+    .star3 {
+      bottom: 200px;
+      display: block;
+      left: 290px;
+      transform: rotate(5deg);
+      width: 40px;
+    }
+  }
+  &.marked.incorrect {
+    .base-character {
+      display: none;
+    }
+    .fail-character {
+      display: block;
+    }
+  }
+}

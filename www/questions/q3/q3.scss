@@ -1,0 +1,102 @@
+#q3 {
+  .base-character, .success-character, .fail-character {
+    bottom: 25px;
+    left: 80px;
+    width: 165px;
+    z-index: 10;
+  }
+  .base-character {
+    display: block;
+    z-index: 10;
+  }
+  .success-character,
+  .fail-character,
+  .star1, .star2, .star3, .star4 {
+    display: none;
+  }
+  .bacteria1 {
+    bottom: 95px;
+    left: 260px;
+    width: 45px;
+    z-index: 20;
+  }
+  .bacteria2 {
+    bottom: 150px;
+    left: 25px;
+    width: 45px;
+    z-index: 20;
+  }
+  .dirt1 {
+    bottom: 128px;
+    left: 60px;
+    width: 35px;
+    z-index: 20;
+  }
+  .dirt2 {
+    bottom: 95px;
+    left: 220px;
+    width: 35px;
+    z-index: 20;
+  }
+
+  &.marked.correct {
+    .dirt1,
+    .dirt2 {
+      display: none;
+    }
+    .base-character {
+      display: none;
+    }
+    .success-character {
+      display: block;
+      width: 210px;
+    }
+    .bacteria1 {
+      bottom: 25px;
+      transform: rotate(190deg);
+    }
+    .bacteria2 {
+      bottom: 30px;
+      transform: rotate(90deg);
+    }
+    .star1 {
+      bottom: 300px;
+      display: block;
+      left: 20px;
+      transform: rotate(45deg);
+      width: 50px;
+    }
+    .star2 {
+      bottom: 385px;
+      display: block;
+      left: 50px;
+      transform: rotate(15deg);
+      width: 75px;
+    }
+    .star3 {
+      bottom: 400px;
+      display: block;
+      left: 260px;
+      transform: rotate(5deg);
+      width: 40px;
+    }
+    .star4 {
+      bottom: 290px;
+      display: block;
+      left: 325px;
+      transform: rotate(5deg);
+      width: 40px;
+    }
+  }
+  &.marked.incorrect {
+    .base-character {
+      display: none;
+    }
+    .fail-character {
+      bottom: 25px;
+      left: 99px;
+      display: block;
+      width: 145px;
+    }
+  }
+}

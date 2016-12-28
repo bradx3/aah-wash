@@ -1,0 +1,993 @@
+$primary: #80D8FF;
+$secondary: #0097A7;
+$dark-font: #342D26;
+$light-font: white;
+$light-borders: #DFDBD9;
+$height: 600px;
+
+$row1-y: 25px;
+$row1-width: 150px;
+$row2-y: 175px;
+$row2-xoffset: 50px;
+$row2-width: 140px;
+$row3-y: 325px;
+$row3-xoffset: 50px;
+$row3-width: 145px;
+$square-height: 100px;
+$square-width: 150px;
+
+$green: #6CC551;
+$dark-green: #47624F;
+
+$red: #FF7043;
+
+@font-face {
+  font-family: "Comfortaa";
+  src: url("../font/Comfortaa-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Comfortaa-bold";
+  src: url("../font/Comfortaa-Bold.ttf");
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+aah, input {
+  font-family: "Comfortaa";
+}
+
+aah {
+  background: $green;
+  color: $dark-font;
+  display: block;
+  height: $height;
+  margin: 0;
+  position: relative;
+  text-align: center;
+  width: 1024px;
+
+  .grass1, .grass2, .grass3 {
+    bottom: 0;
+    position: absolute;
+    width: 75px;
+  }
+  .grass1 {
+    left: 75px;
+  }
+  .grass2 {
+    left: 225px;
+  }
+  .grass3 {
+    left: 800px;
+  }
+}
+.mdl-button--fab {
+  background: $secondary;
+  color: white;
+  font-weight: bold;
+}
+
+.camera-icon {
+  cursor: pointer;
+  margin-top: 100px;
+  width: 200px;
+}
+
+@keyframes wiggle {
+  0% {transform:rotate(25deg);}
+  50% {transform:rotate(-25deg);}
+  100% {transform:rotate(25deg);}
+}
+
+/* Common intro styles */
+welcome, add-players, prompt, prompt-player, player-details, pass-tablet {
+  background-color: $green;
+  background-image: url("../img/walkway.png");
+  background-position: 0 90%;
+  background-repeat: no-repeat;
+  background-size: 1024px 150px;
+  display: block;
+  height: 100%;
+  position: relative;
+
+  .title {
+    color: $light-font;
+    font-size: 20px;
+    position: absolute;
+    top: 75%;
+    width: 100%;
+  }
+
+  .add-player, .next {
+    bottom: 90px;
+    cursor: pointer;
+    position: absolute;
+    right: 25px;
+    width: 100px;
+  }
+
+}
+
+/* Welcome page */
+welcome {
+  display: block;
+  font-family: "Comfortaa-bold";
+  height: 100%;
+  
+  .welcome {
+    cursor: pointer;
+  }
+}
+
+/* Player styles */
+player {
+  display: block;
+  text-align: center;
+  z-align: 100;
+
+  .photo {
+    border-color: white;
+    border-radius: 50%;
+    border-style: solid;
+    box-shadow: rgba(0,0,0,0.8) 0 0 10px;
+    display: inline-block;
+  }
+  img {
+    border: 5px solid $green;
+    border-radius: 50%;
+  }
+  &#player-1 img {
+    border-color: #6D4C41;
+  }
+  &#player-2 img {
+    border-color: #29DD00;
+  }
+  &#player-3 img {
+    border-color: #2196F3;
+  }
+  &#player-4 img {
+    border-color: #FBC02D;
+  }
+  &#player-5 img {
+    border-color: #E91C63;
+  }
+}
+.player-small {
+  float: right;
+  margin: 3px;
+  label {
+    display: none;
+  }
+  .photo {
+    border: 2px solid white;
+  }
+  img {
+    height: 50px;
+    width: 55px;
+  }
+}
+.player-medium {
+  padding-top: 10px;
+  label {
+    display: block;
+    font-weight: bold;
+    padding-top: 10px;
+  }
+  .photo {
+    border-width: 3px;
+    display: block;
+  }
+  img {
+    border-width: 10px;
+    height: 90px;
+    width: 100px;
+  }
+}
+.player-large {
+  label {
+    display: block;
+    font-size: 150%;
+    padding-top: 30px;
+  }
+  .photo {
+    border-width: 5px;
+  }
+  img {
+    border-width: 20px;
+    height: 180px;
+    width: 200px;
+  }
+}
+
+/* Choose locale page */
+choose-locale {
+  .title {
+    font-size: 20px;
+    position: absolute;
+    top: 150px;
+    width: 100%;
+  }
+  ul {
+    margin: 0 auto;
+    padding-top: 200px;
+    width: 250px;
+  }
+}
+
+/* Prompt player page */
+prompt-player {
+  .locale {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    img {
+      opacity: 0.5;
+      width: 25px;
+    }
+  }
+  .start-game {
+    position: absolute;
+    right: 25px;
+    top: 150px;
+    p {
+      display: inline-block;
+      font-size: 20px;
+    }
+    img {
+      width: 100px;
+    }
+  }
+}
+
+/* Player detail entry page */
+player-details {
+  .player-info {
+    padding-top: 120px;
+  }
+  input {
+    background-color: $dark-green;
+    color: $light-font;
+    font-size: 20px;
+    line-height: 35px;
+    margin-top: 85px;
+    text-align: center;
+    width: 300px;
+  }
+  input, input:focus {
+    border: none;
+    border-bottom: 1px solid $light-font;
+  }
+  player label {
+    display: none !important;
+  }
+}
+
+/* Pass tablet page */
+pass-tablet {
+  player-list {
+    border-top: 1px solid $light-borders;
+    color: $light-font;
+    display: block;
+    height: 150px;
+    padding: 0px 0 0 20px;
+    position: relative;
+    text-align: left;
+    width: 475px;
+  }
+  player-list player {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  .prompt-to-pass {
+    position: absolute;
+    right: 0px;
+    img {
+      width: 500px;
+    }
+    p {
+      font-size: 20px;
+      text-align: left;
+    }
+  }
+}
+
+/* Add players page */
+add-players {
+  player-list {
+    border-top: 1px solid $light-borders;
+    color: $light-font;
+    display: block;
+    height: 150px;
+    padding: 0px 0 0 20px;
+    position: relative;
+    text-align: left;
+    width: 475px;
+  }
+  player-list player {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  .add-player {
+    bottom: -37px;
+    cursor: pointer;
+    position: absolute;
+    right: 25px;
+    width: 100px;
+  }
+  .start-game {
+    cursor: pointer;
+    position: absolute;
+    right: 50px;
+    bottom: 105px;
+    width: 75px;
+  }
+  ul {
+    list-style-type: none;
+    padding-right: 75px;
+    text-align: center;
+  }
+  li {
+    display: inline-block;
+    padding: 0px 50px;
+  }
+  label {
+    display: block;
+  }
+
+  .pass-table {
+    position: absolute;
+    right: 100px;
+    img {
+      width: 250px;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+  add-player {
+    display: block;
+    position: relative;
+
+    .player-info {
+      padding: 0;
+    }
+    .player-large label {
+      display: none;
+    }
+    input {
+      background-color: $dark-green;
+      color: $light-font;
+      font-size: 20px;
+      line-height: 35px;
+      margin-top: 60px;
+      text-align: center;
+      width: 300px;
+    }
+    input, input:focus {
+      border: none;
+      border-bottom: 1px solid $light-font;
+    }
+    .camera-icon {
+      margin-top: 90px;
+    }
+    button {
+      bottom: 0;
+      position: absolute;
+      right: 240px;
+    }
+  }
+}
+
+game {
+  display: block;
+  height: $height;
+}
+
+congratulations {
+  display: block;
+  padding-top: 30px;
+
+  .title {
+    font-size: 20px;
+    padding: 15px;
+  }
+  .winner {
+    label {
+      display: none;
+    }
+  }
+  .finishers {
+    padding-top: 15px;
+    table {
+      color: $dark-font;
+      margin: 0 auto;
+    }
+  }
+  .footer {
+    padding-top: 45px;
+  }
+}
+
+.prompt {
+  color: $light-font;
+  cursor: pointer;
+  display: block;
+  height: $height;
+  text-align: center;
+  width: 100%;
+
+  .move-to-roll {
+    position: absolute;
+    right: 50px;
+    top: 225px;
+    width: 75px;
+  }
+
+  player {
+    display: block;
+    margin: auto;
+    padding-top: 150px;
+
+    label {
+      display: none;
+    }
+  }
+
+  .title {
+    color: $light-font;
+  }
+}
+
+roll {
+  background-color: white;
+  background-image: url(../img/question-bg.png);
+  background-repeat: no-repeat;
+  background-size: 101% 101%;
+  color: $primary;
+  cursor: pointer;
+  display: block;
+  height: $height;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  
+  .dice {
+    left: 15px;
+    height: 115px;
+    position: relative;
+    top: 15px;
+    width: 115px;
+    img {
+      width: 115px;
+    }
+
+    .dot-1, .dot-2, .dot-3, .dot-4, .dot-5, .dot-6 {
+      border: 2px solid white;
+      border-radius: 50%;
+      background-color: $green;
+      display: none;
+      height: 15px;
+      position: absolute;
+      width: 15px;
+    }
+    &.animating {
+      .dot-1, .dot-2, .dot-3, .dot-4, .dot-5, .dot-6 {
+        background-color: $red;
+      }
+    }
+
+    &.roll-1 .dot-1, &.roll-3 .dot-3, &.roll-5 .dot-5 {
+      display: block;
+      left: 48px;
+      top: 47px;
+    }
+    &.roll-2, &.roll-3, &.roll-4, &.roll-5, &.roll-6 {
+      .dot-1 {
+        display: block;
+        left: 20px;
+        top: 20px;
+      }
+      .dot-2 {
+        display: block;
+        left: 75px;
+        top: 75px;
+      }
+    }
+    &.roll-4, &.roll-5, &.roll-6 {
+      .dot-3 {
+        display: block;
+        left: 75px;
+        top: 20px;
+      }
+      .dot-4 {
+        display: block;
+        left: 20px;
+        top: 75px;
+      }
+    }
+    &.roll-6 {
+      .dot-5 {
+        display: block;
+        left: 47.5px;
+        top: 20px;
+      }
+      .dot-6 {
+        display: block;
+        left: 47.5px;
+        top: 75px;
+      }
+    }
+  }
+
+  .character {
+    bottom: 25px;
+    right: 50px;
+    position: absolute;
+    width: 250px;
+  }
+}
+
+question {
+  .question {
+    background-image: url(../img/question-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-size: 20px;
+    height: $height;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+  }
+  .question::before {
+    background: orange;
+    content: "";
+    display: block;
+    left: 0;
+    height: $height;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .question.marked.incorrect::before {
+    opacity: 0.25;
+  }
+
+  player {
+    position: absolute;
+    left: -40px;
+    top: -40px;
+  }
+  .label {
+    display: none;
+    bottom: 20px;
+    color: $dark-font;
+    font-size: 200%;
+    font-weight: bold;
+    position: absolute;
+    left: 20px;
+  }
+  .main-img {
+    height: 540px;
+    width: 800px;
+  }
+  .next {
+    bottom: 25px;
+    cursor: pointer;
+    position: absolute;
+    right: 50px;
+    width: 100px;
+  }
+  .audio {
+    cursor: pointer;
+    left: 20px;
+    position: absolute;
+    top: 10px;
+    width: 75px;
+  }
+  .question-text,
+  .correct-text,
+  .incorrect-text {
+    color: white;
+    font-size: 20px;
+    margin-left: 100px;
+    margin-top: 30px;
+    text-align: left;
+  }
+  .correct-text,
+  .incorrect-text {
+    display: none;
+  }
+  .stage-1 {
+    cursor: pointer;
+  }
+  .stage-2 {
+    ul {
+      list-style-type: none;
+      padding-left: 350px;
+      padding-top: 15px;
+      width: 600px;
+      li {
+        background-color: white;
+        border: 1px solid $light-borders;
+        border-radius: 5%;
+        cursor: pointer;
+        display: inline-block;
+        margin: 15px;
+        position: relative;
+        vertical-align: middle;
+        z-index: 100;
+        .answer {
+          border: 2px solid $light-borders;
+          font-style: italic;
+          margin: 10px 10px 0 10px;
+          padding: 5px;
+          z-index: 100;
+        }
+      }
+      .selected {
+        border: 8px solid $green;
+        margin: 8px;
+        .answer {
+          border: 2px solid $green;
+        }
+      }
+      .answer, .text {
+        font-size: 18px;
+        padding-top: 10px;
+        text-align: center;
+      }
+      .mark {
+        bottom: 40%;
+        display: none;
+        position: absolute;
+        left: 35%;
+        width: 50px;
+      }
+      .selected.marked .mark {
+        display: block;
+      }
+      .selected.marked.incorrect {
+        border-color: $red;
+        .answer {
+          border-color: $red;
+        }
+      }
+    }
+    .answers-2 {
+      padding-left: 400px;
+      padding-top: 85px;
+      li {
+        height: 200px;
+        width: 200px;
+        .answer { width: 165px; }
+      }
+    }
+    .answers-3 {
+      li {
+        height: 200px;
+        padding-top: 80px;
+        width: 250px;
+        .answer { width: 150px; }
+      }
+    }
+    .answers-4 {
+      li {
+        height: 180px;
+        width: 200px;
+        .answer { 
+          height: 115px;
+          width: 130px;
+        }
+      }
+    }
+    .answers-5, .answers-6 {
+      li {
+        height: 180px;
+        width: 145px;
+        .answer { width: 115px; }
+      }
+    }
+    .answers-7, .answers-8, .answers-9 {
+      li {
+        height: 135px;
+        width: 220px;
+        .answer { width: 85px; }
+      }
+    }
+    .answers-10 {
+      li {
+        height: 145px;
+        width: 170px;
+        .answer { width: 85px; }
+      }
+    }
+    .next {
+      &.disabled {
+        display: none;
+      }
+    }
+  }
+  .stage-3 {
+    cursor: pointer;
+  }
+  .marked {
+    .question-text {
+      display: none;
+    }
+    &.correct .correct-text {
+      display: block;
+    }
+    &.incorrect .incorrect-text {
+      display: block;
+    }
+  }
+  .canvas {
+    bottom: 17px;
+    left: 0;
+    height: 450px;
+    position: absolute;
+    width: 100%;
+    img {
+      display: block;
+      position: absolute;
+    }
+    .success-character, .fail-character {
+      display: none;
+    }
+  }
+}
+
+/*  */
+board {
+  background: #EFEBE9;
+  cursor: pointer;
+  display: relative;
+  height: $height;
+
+  .board {
+    padding-top: 0px;
+    .row {
+      padding-left: 13px;
+    }
+    .square {
+      background: #FF5A6B;
+      height: $square-height;
+      padding: 15px 0;
+      position: absolute;
+      text-align: left;
+      width: $square-width;
+      .label {
+        background: #FBC02D;
+        border-radius: 50%;
+        color: white;
+        font-size: 48px;
+        font-weight: bold;
+        left: 25px;
+        line-height: 105px;
+        height: 100px;
+        position: absolute;
+        text-align: center;
+        width: 100px;
+      }
+      .player-list {
+        position: relative;
+        player {
+          position: absolute;
+        }
+        #player-1 {
+          left: 38px;
+          top: 15px;
+          z-index: 100;
+        }
+        #player-2 {
+          left: 28px;
+          top: 15px;
+          z-index: 95;
+        }
+        #player-3 {
+          left: 38px;
+          top: 25px;
+          z-index: 90;
+        }
+        #player-4 {
+          left: 38px;
+          top: 5px;
+          z-index: 85;
+        }
+        #player-5 {
+          left: 48px;
+          top: 15px;
+          z-index: 80;
+        }
+      }
+    }
+
+    .redirect {
+      display: block;
+      height: 100px;
+      position: absolute;
+      transform-origin: top;
+      max-width: 70px;
+
+      &[data-start="10"][data-end="3"] {
+        bottom: 110px;
+        left: 385px;
+        transform: rotate(25deg);
+        width: 50px;
+      }
+      &[data-start="8"][data-end="4"] {
+        bottom: 70px;
+        height: 150px;
+        left: 630px;
+        transform: rotate(47deg);
+        width: 50px;
+      }
+      &[data-start="18"][data-end="7"] {
+        bottom: 265px;
+        left: 820px;
+        transform: rotate(10deg);
+        width: 40px;
+      }
+      &[data-start="2"][data-end="12"] {
+        bottom: 105px;
+        left: 121px;
+        transform: rotate(-33deg);
+        width: 50px;
+      }
+      &[data-start="6"][data-end="17"] {
+        bottom: 108px;
+        height: 250px;
+        left: 695px;
+        transform: rotate(-19deg);
+        width: 50px;
+      }
+      &[data-start="9"][data-end="16"] {
+        bottom: 275px;
+        height: 83px;
+        left: 530px;
+        transform: rotate(5deg);
+        width: 50px;
+      }
+      &[data-start="11"][data-end="14"] {
+        bottom: 275px;
+        height: 83px;
+        left: 244px;
+        transform: rotate(0deg);
+        width: 50px;
+      }
+    }
+
+    #square-1 {
+      bottom: $row1-y;
+      left: 0;
+      width: $row1-width;
+    }
+    #square-2 {
+      bottom: $row1-y;
+      left: $row1-width - 1;
+      width: $row1-width;
+    }
+    #square-3 {
+      bottom: $row1-y;
+      left: 2 * ($row1-width - 1);
+      width: $row1-width;
+    }
+    #square-4 {
+      bottom: $row1-y;
+      left: 3 * ($row1-width - 1);
+      width: $row1-width;
+    }
+    #square-5 {
+      bottom: $row1-y;
+      left: 4 * ($row1-width - 1);
+      width: $row1-width;
+    }
+    #square-6 {
+      bottom: $row1-y;
+      border-bottom-right-radius: 25%;
+      left: 5 * ($row1-width - 1);
+      width: $row1-width;
+    }
+    #square-7 {
+      bottom: $row2-y - 25;
+      height: $square-height + 25;
+      left: 5 * ($row1-width - 1);
+      border-top-right-radius: 25%;
+      width: $row1-width;
+    }
+    #square-8 {
+      bottom: $row2-y;
+      left: $row2-xoffset + (4 * ($row2-width - 1));
+      width: $row2-width;
+    }
+    #square-9 {
+      bottom: $row2-y;
+      left: $row2-xoffset + (3 * ($row2-width - 1));
+      width: $row2-width;
+    }
+    #square-10 {
+      bottom: $row2-y;
+      left: $row2-xoffset + (2 * ($row2-width - 1));
+      width: $row2-width;
+    }
+    #square-11 {
+      bottom: $row2-y;
+      left: $row2-xoffset + (1 * ($row2-width - 1));
+      width: $row2-width;
+    }
+    #square-12 {
+      bottom: $row2-y;
+      border-bottom-left-radius: 25%;
+      left: $row2-xoffset;
+      width: $row2-width;
+    }  
+    #square-13 {
+      bottom: $row3-y - 25;
+      border-top-left-radius: 25%;
+      height: $square-height + 25;
+      left: $row3-xoffset;
+      width: $row3-width;
+    }
+    #square-14 {
+      bottom: $row3-y;
+      left: $row3-xoffset + (1 * ($row3-width - 1));
+      width: $row3-width;
+    }
+    #square-15 {
+      bottom: $row3-y;
+      left: $row3-xoffset + (2 * ($row3-width - 1));
+      width: $row3-width;
+    }
+    #square-16 {
+      bottom: $row3-y;
+      left: $row3-xoffset + (3 * ($row3-width - 1));
+      width: $row3-width;
+    }
+    #square-17 {
+      bottom: $row3-y;
+      left: $row3-xoffset + (4 * ($row3-width - 1));
+      width: $row3-width;
+    }
+    #square-18 {
+      bottom: $row3-y;
+      border-bottom-right-radius: 25%;
+      left: $row3-xoffset + (5 * ($row3-width - 1));
+      width: $row3-width;
+    }
+    #square-19 {
+      height: 120px;
+      left: $row3-xoffset + (5 * ($row3-width - 1));
+      top: 0;
+      width: $row3-width;
+      .label {
+        background-color: initial;
+        background-image: url(../img/star.png);
+        background-position: 0;
+        background-repeat: no-repeat;
+        background-size: 175px 150px;
+        border-radius: initial;
+        height: 150px;
+        line-height: 165px;
+        margin-left: -40px;
+        margin-top: -15px;
+        width: 175px;
+
+      }
+    }
+  }
+}
+
+#debug {
+  bottom: 20px;
+  font-size: 15px;
+  position: absolute;
+  right: 25px;
+  text-align: right;
+}

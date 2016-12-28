@@ -1,0 +1,66 @@
+#q4 .base-character, #q4 .success-character, #q4 .fail-character {
+  bottom: 20px;
+  left: 30px;
+  width: 350px;
+  z-index: 10;
+}
+
+#q4 .base-character {
+  display: block;
+}
+
+#q4 .success-character,
+#q4 .fail-character,
+#q4 .stove,
+#q4 .star1, #q4 .star2, #q4 .star3 {
+  display: none;
+}
+
+#q4 .house {
+  bottom: 60px;
+  width: 460px;
+}
+
+#q4.marked.correct .base-character,
+#q4.marked.correct .house {
+  display: none;
+}
+
+#q4.marked.correct .success-character {
+  bottom: 4px;
+  display: block;
+  left: 0;
+  width: 250px;
+}
+
+#q4.marked.correct .star1 {
+  bottom: 265px;
+  display: block;
+  left: 130px;
+  transform: rotate(45deg);
+  width: 50px;
+}
+
+#q4.marked.correct .star2 {
+  bottom: 275px;
+  display: block;
+  left: 225px;
+  transform: rotate(15deg);
+  width: 75px;
+}
+
+#q4.marked.correct .star3 {
+  bottom: 200px;
+  display: block;
+  left: 290px;
+  transform: rotate(5deg);
+  width: 40px;
+}
+
+#q4.marked.incorrect .base-character {
+  display: none;
+}
+
+#q4.marked.incorrect .fail-character {
+  display: block;
+}

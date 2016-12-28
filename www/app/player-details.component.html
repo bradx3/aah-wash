@@ -1,0 +1,13 @@
+<div class="player-info">
+  <player class="player-large" id="player-{{player.id}}" [player]="player"></player>
+
+  <input [(ngModel)]="player.name"
+         (keypress)="handleNameKeypress($event)"
+         placeholder="{{_configService.i18n('Enter name')}}"
+         type="text" />
+
+  <img src="img/fwd-btn.png"
+       *ngIf="player.name.trim().length > 0"
+       (click)="savePlayer()"
+       class="add-player" />
+</div>

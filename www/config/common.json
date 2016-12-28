@@ -1,0 +1,17 @@
+{
+  "locales": [
+    "cambodia"
+  ],
+  "numberOfSquares" : 19,
+  "boardWidth": 7,
+  "redirects": [
+    { "start": 10, "end": 3, "type": "snake" },
+    { "start": 8, "end": 4, "type": "snake" },
+    { "start": 18, "end": 7, "type": "snake" },
+
+    { "start": 2, "end": 12, "type": "ladder" },
+    { "start": 6, "end": 17, "type": "ladder" },
+    { "start": 9, "end": 16, "type": "ladder" },
+    { "start": 11, "end": 14, "type": "ladder" }
+  ]
+}

@@ -1,0 +1,9 @@
+<div class="title">Choose locale</div>
+
+<ul>
+  <li *ngFor="let locale of locales">
+    <a (click)="setLocale(locale)">
+      {{locale}}
+    </a>
+  </li>
+</ul>

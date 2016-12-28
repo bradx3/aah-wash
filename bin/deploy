@@ -1,0 +1,11 @@
+#!/bin/bash
+
+set -e
+
+bin/build
+
+echo "Uploading app"
+gsutil -m rsync -r -x node_modules www gs://aah-board-game/wip
+
+echo "Setting permissions"
+gsutil -m acl set -R -a public-read gs://aah-board-game

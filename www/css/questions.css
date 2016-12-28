@@ -1,0 +1,997 @@
+#q1 .toilet-building {
+  bottom: 50px;
+  left: 40px;
+  width: 425px;
+}
+
+#q1 .base-character, #q1 .success-character, #q1 .fail-character {
+  bottom: 25px;
+  left: 200px;
+  width: 120px;
+}
+
+#q1 .base-character {
+  display: block;
+  z-index: 10;
+}
+
+#q1 .success-character,
+#q1 .fail-character,
+#q1 .toilet-with-tap,
+#q1 .soap,
+#q1 .star1, #q1 .star2, #q1 .star3 {
+  display: none;
+}
+
+#q1 .bacteria1 {
+  bottom: 75px;
+  left: 310px;
+  width: 30px;
+  z-index: 20;
+}
+
+#q1 .bacteria2 {
+  bottom: 75px;
+  left: 180px;
+  width: 25px;
+  z-index: 20;
+}
+
+#q1 .dirt1 {
+  bottom: 95px;
+  left: 200px;
+  width: 25px;
+  z-index: 20;
+}
+
+#q1 .dirt2 {
+  bottom: 75px;
+  left: 290px;
+  width: 25px;
+  z-index: 20;
+}
+
+#q1.marked.correct .toilet-building,
+#q1.marked.correct .dirt1,
+#q1.marked.correct .dirt2,
+#q1.marked.correct .bacteria1,
+#q1.marked.correct .bacteria2 {
+  display: none;
+}
+
+#q1.marked.correct .base-character {
+  left: 160px;
+}
+
+#q1.marked.correct .soap {
+  bottom: 95px;
+  display: block;
+  left: 130px;
+  width: 35px;
+  z-index: 10;
+}
+
+#q1.marked.correct .toilet-with-tap {
+  bottom: 50px;
+  display: block;
+  width: 155px;
+}
+
+#q1.marked.correct .star1 {
+  bottom: 250px;
+  display: block;
+  left: 125px;
+  transform: rotate(45deg);
+  width: 50px;
+}
+
+#q1.marked.correct .star2 {
+  bottom: 270px;
+  display: block;
+  left: 225px;
+  transform: rotate(15deg);
+  width: 75px;
+}
+
+#q1.marked.correct .star3 {
+  bottom: 150px;
+  display: block;
+  left: 325px;
+  transform: rotate(5deg);
+  width: 40px;
+}
+
+#q1.marked.incorrect .base-character {
+  display: none;
+}
+
+#q1.marked.incorrect .fail-character {
+  display: block;
+  z-index: 10;
+}
+
+#q2 .base-character, #q2 .success-character, #q2 .fail-character {
+  bottom: 25px;
+  left: 80px;
+  width: 165px;
+  z-index: 10;
+}
+
+#q2 .base-character {
+  display: block;
+  z-index: 10;
+}
+
+#q2 .success-character,
+#q2 .fail-character {
+  display: none;
+}
+
+#q2 .bacteria1 {
+  bottom: 95px;
+  left: 260px;
+  width: 45px;
+  z-index: 20;
+}
+
+#q2 .bacteria2 {
+  bottom: 150px;
+  left: 25px;
+  width: 45px;
+  z-index: 20;
+}
+
+#q2 .dirt1 {
+  bottom: 128px;
+  left: 60px;
+  width: 35px;
+  z-index: 20;
+}
+
+#q2 .dirt2 {
+  bottom: 95px;
+  left: 220px;
+  width: 35px;
+  z-index: 20;
+}
+
+#q2.marked.correct .dirt1,
+#q2.marked.correct .dirt2 {
+  display: none;
+}
+
+#q2.marked.correct .base-character {
+  display: none;
+}
+
+#q2.marked.correct .success-character {
+  display: block;
+  width: 210px;
+}
+
+#q2.marked.correct .bacteria1 {
+  bottom: 25px;
+  transform: rotate(190deg);
+}
+
+#q2.marked.correct .bacteria2 {
+  bottom: 30px;
+  transform: rotate(90deg);
+}
+
+#q2.marked.incorrect .base-character {
+  display: none;
+}
+
+#q2.marked.incorrect .fail-character {
+  bottom: 25px;
+  left: 99px;
+  display: block;
+  width: 145px;
+}
+
+#q2 .base-character, #q2 .success-character, #q2 .fail-character {
+  bottom: 25px;
+  left: 80px;
+  width: 165px;
+  z-index: 10;
+}
+
+#q2 .base-character {
+  display: block;
+  z-index: 10;
+}
+
+#q2 .success-character,
+#q2 .fail-character {
+  display: none;
+}
+
+#q2 .bacteria1 {
+  bottom: 95px;
+  left: 260px;
+  width: 45px;
+  z-index: 20;
+}
+
+#q2 .bacteria2 {
+  bottom: 150px;
+  left: 25px;
+  width: 45px;
+  z-index: 20;
+}
+
+#q2 .dirt1 {
+  bottom: 128px;
+  left: 60px;
+  width: 35px;
+  z-index: 20;
+}
+
+#q2 .dirt2 {
+  bottom: 95px;
+  left: 220px;
+  width: 35px;
+  z-index: 20;
+}
+
+#q2.marked.correct .dirt1,
+#q2.marked.correct .dirt2 {
+  display: none;
+}
+
+#q2.marked.correct .base-character {
+  display: none;
+}
+
+#q2.marked.correct .success-character {
+  display: block;
+  width: 210px;
+}
+
+#q2.marked.correct .bacteria1 {
+  bottom: 25px;
+  transform: rotate(190deg);
+}
+
+#q2.marked.correct .bacteria2 {
+  bottom: 30px;
+  transform: rotate(90deg);
+}
+
+#q2.marked.incorrect .base-character {
+  display: none;
+}
+
+#q2.marked.incorrect .fail-character {
+  bottom: 25px;
+  left: 99px;
+  display: block;
+  width: 145px;
+}
+
+#q3 .base-character, #q3 .success-character, #q3 .fail-character {
+  bottom: 25px;
+  left: 80px;
+  width: 165px;
+  z-index: 10;
+}
+
+#q3 .base-character {
+  display: block;
+  z-index: 10;
+}
+
+#q3 .success-character,
+#q3 .fail-character,
+#q3 .star1, #q3 .star2, #q3 .star3, #q3 .star4 {
+  display: none;
+}
+
+#q3 .bacteria1 {
+  bottom: 95px;
+  left: 260px;
+  width: 45px;
+  z-index: 20;
+}
+
+#q3 .bacteria2 {
+  bottom: 150px;
+  left: 25px;
+  width: 45px;
+  z-index: 20;
+}
+
+#q3 .dirt1 {
+  bottom: 128px;
+  left: 60px;
+  width: 35px;
+  z-index: 20;
+}
+
+#q3 .dirt2 {
+  bottom: 95px;
+  left: 220px;
+  width: 35px;
+  z-index: 20;
+}
+
+#q3.marked.correct .dirt1,
+#q3.marked.correct .dirt2 {
+  display: none;
+}
+
+#q3.marked.correct .base-character {
+  display: none;
+}
+
+#q3.marked.correct .success-character {
+  display: block;
+  width: 210px;
+}
+
+#q3.marked.correct .bacteria1 {
+  bottom: 25px;
+  transform: rotate(190deg);
+}
+
+#q3.marked.correct .bacteria2 {
+  bottom: 30px;
+  transform: rotate(90deg);
+}
+
+#q3.marked.correct .star1 {
+  bottom: 300px;
+  display: block;
+  left: 20px;
+  transform: rotate(45deg);
+  width: 50px;
+}
+
+#q3.marked.correct .star2 {
+  bottom: 385px;
+  display: block;
+  left: 50px;
+  transform: rotate(15deg);
+  width: 75px;
+}
+
+#q3.marked.correct .star3 {
+  bottom: 400px;
+  display: block;
+  left: 260px;
+  transform: rotate(5deg);
+  width: 40px;
+}
+
+#q3.marked.correct .star4 {
+  bottom: 290px;
+  display: block;
+  left: 325px;
+  transform: rotate(5deg);
+  width: 40px;
+}
+
+#q3.marked.incorrect .base-character {
+  display: none;
+}
+
+#q3.marked.incorrect .fail-character {
+  bottom: 25px;
+  left: 99px;
+  display: block;
+  width: 145px;
+}
+
+#q4 .base-character, #q4 .success-character, #q4 .fail-character {
+  bottom: 20px;
+  left: 30px;
+  width: 350px;
+  z-index: 10;
+}
+
+#q4 .base-character {
+  display: block;
+}
+
+#q4 .success-character,
+#q4 .fail-character,
+#q4 .stove,
+#q4 .star1, #q4 .star2, #q4 .star3 {
+  display: none;
+}
+
+#q4 .house {
+  bottom: 60px;
+  width: 460px;
+}
+
+#q4.marked.correct .base-character,
+#q4.marked.correct .house {
+  display: none;
+}
+
+#q4.marked.correct .success-character {
+  bottom: 4px;
+  display: block;
+  left: 0;
+  width: 250px;
+}
+
+#q4.marked.correct .star1 {
+  bottom: 265px;
+  display: block;
+  left: 130px;
+  transform: rotate(45deg);
+  width: 50px;
+}
+
+#q4.marked.correct .star2 {
+  bottom: 275px;
+  display: block;
+  left: 225px;
+  transform: rotate(15deg);
+  width: 75px;
+}
+
+#q4.marked.correct .star3 {
+  bottom: 200px;
+  display: block;
+  left: 290px;
+  transform: rotate(5deg);
+  width: 40px;
+}
+
+#q4.marked.incorrect .base-character {
+  display: none;
+}
+
+#q4.marked.incorrect .fail-character {
+  display: block;
+}
+
+#q5 .base-character, #q5 .success-character, #q5 .fail-character {
+  bottom: 35px;
+  left: 95px;
+  width: 105px;
+  z-index: 10;
+}
+
+#q5 .base-character {
+  display: block;
+}
+
+#q5 .success-character,
+#q5 .fail-character {
+  display: none;
+}
+
+#q5 .house {
+  bottom: 60px;
+  width: 460px;
+}
+
+#q5.marked.correct .base-character,
+#q5.marked.correct .house {
+  display: none;
+}
+
+#q5.marked.correct .success-character {
+  bottom: 33px;
+  display: block;
+  left: 0;
+  width: 250px;
+}
+
+#q5.marked.incorrect .base-character {
+  display: none;
+}
+
+#q5.marked.incorrect .fail-character {
+  display: block;
+}
+
+#q6 .base-character, #q6 .success-character, #q6 .fail-character {
+  bottom: 20px;
+  left: 180px;
+  width: 215px;
+  z-index: 10;
+}
+
+#q6 .base-character {
+  display: block;
+}
+
+#q6 .success-character,
+#q6 .fail-character,
+#q6 .stove,
+#q6 .star1, #q6 .star2, #q6 .star3 {
+  display: none;
+}
+
+#q6 .fruit-basket {
+  bottom: 35px;
+  left: 100px;
+  width: 75px;
+}
+
+#q6 .cloud-sun {
+  bottom: 290px;
+  left: 85px;
+  width: 250px;
+}
+
+#q6.marked.correct .base-character,
+#q6.marked.correct .house {
+  display: none;
+}
+
+#q6.marked.correct .success-character {
+  bottom: 18px;
+  display: block;
+  left: 0;
+  width: 350px;
+}
+
+#q6.marked.correct .fruit-basket {
+  left: 25px;
+  z-index: 10;
+}
+
+#q6.marked.correct .star1 {
+  bottom: 265px;
+  display: block;
+  left: 110px;
+  transform: rotate(45deg);
+  width: 50px;
+  z-index: 20;
+}
+
+#q6.marked.correct .star2 {
+  bottom: 275px;
+  display: block;
+  left: 225px;
+  transform: rotate(15deg);
+  width: 75px;
+}
+
+#q6.marked.correct .star3 {
+  bottom: 200px;
+  display: block;
+  left: 325px;
+  transform: rotate(5deg);
+  width: 40px;
+}
+
+#q6.marked.incorrect .base-character {
+  display: none;
+}
+
+#q6.marked.incorrect .fail-character {
+  display: block;
+}
+
+#q7 .base-character, #q7 .success-character, #q7 .fail-character {
+  bottom: 35px;
+  left: 95px;
+  width: 105px;
+  z-index: 10;
+}
+
+#q7 .base-character {
+  display: block;
+}
+
+#q7 .success-character,
+#q7 .fail-character,
+#q7 .star1, #q7 .star2, #q7 .star3 {
+  display: none;
+}
+
+#q7 .house {
+  bottom: 60px;
+  width: 460px;
+}
+
+#q7.marked.correct .base-character,
+#q7.marked.correct .house {
+  display: none;
+}
+
+#q7.marked.correct .success-character {
+  bottom: 33px;
+  display: block;
+  left: 0;
+  width: 250px;
+}
+
+#q7.marked.correct .star1 {
+  bottom: 275px;
+  display: block;
+  left: 125px;
+  transform: rotate(45deg);
+  width: 50px;
+}
+
+#q7.marked.correct .star2 {
+  bottom: 270px;
+  display: block;
+  left: 225px;
+  transform: rotate(15deg);
+  width: 75px;
+}
+
+#q7.marked.correct .star3 {
+  bottom: 150px;
+  display: block;
+  left: 325px;
+  transform: rotate(5deg);
+  width: 40px;
+}
+
+#q7.marked.incorrect .base-character {
+  display: none;
+}
+
+#q7.marked.incorrect .fail-character {
+  display: block;
+}
+
+#q8 .base-character, #q8 .success-character, #q8 .fail-character {
+  bottom: 45px;
+  left: 180px;
+  width: 160px;
+  z-index: 10;
+}
+
+#q8 .base-character {
+  display: block;
+}
+
+#q8 .success-character,
+#q8 .fail-character,
+#q8 .toilet,
+#q8 .star1, #q8 .star2, #q8 .star3 {
+  display: none;
+}
+
+#q8 .grass {
+  bottom: 60px;
+  width: 150px;
+}
+
+#q8.marked.correct .base-character {
+  display: none;
+}
+
+#q8.marked.correct .success-character {
+  bottom: 35px;
+  display: block;
+  left: 50px;
+  width: 125px;
+}
+
+#q8.marked.correct .toilet {
+  bottom: 50px;
+  display: block;
+  left: 0;
+  width: 400px;
+}
+
+#q8.marked.correct .star1 {
+  bottom: 265px;
+  display: block;
+  left: 60px;
+  transform: rotate(45deg);
+  width: 50px;
+  z-index: 20;
+}
+
+#q8.marked.correct .star2 {
+  bottom: 275px;
+  display: block;
+  left: 175px;
+  transform: rotate(15deg);
+  width: 75px;
+}
+
+#q8.marked.correct .star3 {
+  bottom: 200px;
+  display: block;
+  left: 225px;
+  transform: rotate(5deg);
+  width: 40px;
+}
+
+#q8.marked.incorrect .base-character {
+  display: none;
+}
+
+#q8.marked.incorrect .fail-character {
+  display: block;
+}
+
+#q9 {
+  background-image: url(../img/orange-bg.png);
+}
+
+#q9 .base-character, #q9 .success-character, #q9 .fail-character {
+  bottom: 3px;
+  left: 10px;
+  width: 400px;
+  z-index: 10;
+}
+
+#q9 .base-character {
+  display: block;
+}
+
+#q9 .success-character,
+#q9 .fail-character,
+#q9 .toilet,
+#q9 .star1, #q9 .star2, #q9 .star3 {
+  display: none;
+}
+
+#q9 .grass {
+  bottom: 60px;
+  width: 150px;
+}
+
+#q9.marked.correct .base-character {
+  display: none;
+}
+
+#q9.marked.correct .success-character {
+  bottom: 7px;
+  display: block;
+  left: 0px;
+  width: 350px;
+}
+
+#q9.marked.correct .toilet {
+  bottom: 50px;
+  display: block;
+  left: 0;
+  width: 400px;
+}
+
+#q9.marked.correct .star1 {
+  bottom: 265px;
+  display: block;
+  left: 60px;
+  transform: rotate(45deg);
+  width: 50px;
+  z-index: 20;
+}
+
+#q9.marked.correct .star2 {
+  bottom: 275px;
+  display: block;
+  left: 175px;
+  transform: rotate(15deg);
+  width: 75px;
+}
+
+#q9.marked.correct .star3 {
+  bottom: 200px;
+  display: block;
+  left: 225px;
+  transform: rotate(5deg);
+  width: 40px;
+}
+
+#q9.marked.incorrect {
+  background-image: url(../questions/q10/incorrect-bg.png);
+}
+
+#q9.marked.incorrect .base-character {
+  display: none;
+}
+
+#q9.marked.incorrect .fail-character {
+  display: block;
+}
+
+#q10 .base-character, #q10 .success-character, #q10 .fail-character {
+  bottom: 21px;
+  left: 10px;
+  width: 400px;
+  z-index: 10;
+}
+
+#q10 .base-character {
+  display: block;
+}
+
+#q10 .success-character,
+#q10 .fail-character {
+  display: none;
+}
+
+#q10.marked.correct .base-character {
+  display: none;
+}
+
+#q10.marked.correct .success-character {
+  bottom: 25px;
+  display: block;
+  left: 0px;
+  width: 400px;
+}
+
+#q10.marked.incorrect .base-character {
+  display: none;
+}
+
+#q10.marked.incorrect .fail-character {
+  display: block;
+}
+
+#q11 .base-character, #q11 .success-character, #q11 .fail-character {
+  bottom: -10px;
+  left: 10px;
+  width: 400px;
+  z-index: 10;
+}
+
+#q11 .base-character {
+  display: block;
+}
+
+#q11 .success-character,
+#q11 .fail-character {
+  display: none;
+}
+
+#q11.marked.correct .base-character {
+  display: none;
+}
+
+#q11.marked.correct .success-character {
+  bottom: 25px;
+  display: block;
+  left: 0px;
+  width: 400px;
+}
+
+#q11.marked.incorrect .base-character {
+  display: none;
+}
+
+#q11.marked.incorrect .fail-character {
+  display: block;
+}
+
+#q19 .base-character, #q19 .success-character, #q19 .fail-character {
+  bottom: 40px;
+  left: 0;
+  width: 450px;
+  z-index: 10;
+}
+
+#q19 .base-character {
+  display: block;
+}
+
+#q19 .success-character,
+#q19 .fail-character {
+  display: none;
+}
+
+#q19 .star1, #q19 .star2 {
+  display: none;
+}
+
+#q19.marked.correct .base-character {
+  display: none;
+}
+
+#q19.marked.correct .success-character {
+  bottom: 14px;
+  display: block;
+  width: 476px;
+}
+
+#q19.marked.correct .star1 {
+  bottom: 345px;
+  display: block;
+  left: 60px;
+  transform: rotate(45deg);
+  width: 50px;
+}
+
+#q19.marked.correct .star2 {
+  bottom: 360px;
+  display: block;
+  left: 225px;
+  transform: rotate(15deg);
+  width: 75px;
+}
+
+#q19.marked.incorrect .base-character {
+  display: none;
+}
+
+#q19.marked.incorrect .fail-character {
+  display: block;
+}
+
+#q22 .base-character, #q22 .success-character, #q22 .fail-character {
+  bottom: 8px;
+  left: 0px;
+  width: 460px;
+  z-index: 10;
+}
+
+#q22 .base-character {
+  display: block;
+}
+
+#q22 .success-character,
+#q22 .fail-character,
+#q22 .bacteria,
+#q22 .dirt {
+  display: none;
+}
+
+#q22 .star1, #q22 .star2, #q22 .star3 {
+  display: none;
+  z-index: 20;
+}
+
+#q22.marked.correct .base-character {
+  display: none;
+}
+
+#q22.marked.correct .success-character {
+  display: block;
+}
+
+#q22.marked.correct .star1 {
+  bottom: 250px;
+  display: block;
+  left: 125px;
+  transform: rotate(45deg);
+  width: 50px;
+}
+
+#q22.marked.correct .star2 {
+  bottom: 270px;
+  display: block;
+  left: 225px;
+  transform: rotate(15deg);
+  width: 75px;
+}
+
+#q22.marked.correct .star3 {
+  bottom: 150px;
+  display: block;
+  left: 325px;
+  transform: rotate(5deg);
+  width: 40px;
+}
+
+#q22.marked.incorrect .base-character {
+  display: none;
+}
+
+#q22.marked.incorrect .fail-character {
+  display: block;
+}
+
+#q22.marked.incorrect .bacteria {
+  bottom: 40px;
+  display: block;
+  left: 185px;
+  width: 25px;
+  z-index: 20;
+}
+
+#q22.marked.incorrect .dirt {
+  bottom: 65px;
+  display: block;
+  left: 140px;
+  width: 25px;
+  z-index: 20;
+}

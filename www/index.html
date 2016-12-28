@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>AAH Board Game</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/questions.css">
+
+    <script src="cordova.js"></script>
+    <script src="dist/polyfill.js"></script>
+    <script src="dist/zone.js"></script>
+    <script src="dist/Reflect.js"></script>
+    <script src="dist/system.src.js"></script>
+
+    <script src="systemjs.config.js"></script>
+  </head>
+
+  <body>
+    <script>
+     var base = document.location;
+     var app = "prod";
+
+     if (document.location.host.indexOf("localhost") >= 0 || document.location.port == "3000") {
+         base = "/";
+         app = "dev";
+     }
+
+     // set base path
+     document.write("<base href=\"" + base + "\" />");
+
+     // load app
+     System.import(app).catch(function(err){ console.error(err); });
+    </script>
+    
+    <aah></aah>
+  </body>
+</html>

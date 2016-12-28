@@ -1,0 +1,51 @@
+#q19 {
+  .base-character, .success-character, .fail-character {
+    bottom: 40px;
+    left: 0;
+    width: 450px;
+    z-index: 10;
+  }
+  .base-character {
+    display: block;
+  }
+  .success-character,
+  .fail-character {
+    display: none;
+  }
+  .star1, .star2 {
+    display: none;
+  }
+
+  &.marked.correct {
+    .base-character {
+      display: none;
+    }
+    .success-character {
+      bottom: 14px;
+      display: block;
+      width: 476px;
+    }
+    .star1 {
+      bottom: 345px;
+      display: block;
+      left: 60px;
+      transform: rotate(45deg);
+      width: 50px;
+    }
+    .star2 {
+      bottom: 360px;
+      display: block;
+      left: 225px;
+      transform: rotate(15deg);
+      width: 75px;
+    }
+  }
+  &.marked.incorrect {
+    .base-character {
+      display: none;
+    }
+    .fail-character {
+      display: block;
+    }
+  }
+}

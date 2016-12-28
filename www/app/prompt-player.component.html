@@ -1,0 +1,16 @@
+<a (click)="chooseLocale()" class="locale"><img src="img/locale.png" /></a>
+
+<img (click)="takePhoto()"
+     class="camera-icon"
+     src="img/camera-icon.png" />
+
+<div class="title">
+  {{_configService.i18n("Please take a picture")}}
+</div>
+
+<div class="start-game" *ngIf="players.length >= 2">
+  <p>
+    {{_configService.i18n("Or start game")}}
+  </p>
+  <img src="img/fwd-btn.png" (click)="startGame()" />
+</div>

@@ -1,0 +1,79 @@
+#q6 .base-character, #q6 .success-character, #q6 .fail-character {
+  bottom: 20px;
+  left: 180px;
+  width: 215px;
+  z-index: 10;
+}
+
+#q6 .base-character {
+  display: block;
+}
+
+#q6 .success-character,
+#q6 .fail-character,
+#q6 .stove,
+#q6 .star1, #q6 .star2, #q6 .star3 {
+  display: none;
+}
+
+#q6 .fruit-basket {
+  bottom: 35px;
+  left: 100px;
+  width: 75px;
+}
+
+#q6 .cloud-sun {
+  bottom: 290px;
+  left: 85px;
+  width: 250px;
+}
+
+#q6.marked.correct .base-character,
+#q6.marked.correct .house {
+  display: none;
+}
+
+#q6.marked.correct .success-character {
+  bottom: 18px;
+  display: block;
+  left: 0;
+  width: 350px;
+}
+
+#q6.marked.correct .fruit-basket {
+  left: 25px;
+  z-index: 10;
+}
+
+#q6.marked.correct .star1 {
+  bottom: 265px;
+  display: block;
+  left: 110px;
+  transform: rotate(45deg);
+  width: 50px;
+  z-index: 20;
+}
+
+#q6.marked.correct .star2 {
+  bottom: 275px;
+  display: block;
+  left: 225px;
+  transform: rotate(15deg);
+  width: 75px;
+}
+
+#q6.marked.correct .star3 {
+  bottom: 200px;
+  display: block;
+  left: 325px;
+  transform: rotate(5deg);
+  width: 40px;
+}
+
+#q6.marked.incorrect .base-character {
+  display: none;
+}
+
+#q6.marked.incorrect .fail-character {
+  display: block;
+}

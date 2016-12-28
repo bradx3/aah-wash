@@ -1,0 +1,8 @@
+<player-list [players]="players" [size]="'medium'"></player-list>
+
+<div class="prompt-to-pass">
+  <p>{{_configService.i18n("Pass the tablet to the next player")}}</p>
+  <img src="img/pass-tablet.png">
+</div>
+
+<img src="img/fwd-btn.png" class="next" (click)="moveToNext()" />

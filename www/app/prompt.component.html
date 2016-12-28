@@ -1,0 +1,12 @@
+<div class="prompt" (click)="moveToRoll()">
+  <player class="player-large" id="player-{{player.id}}" [player]="player"></player>
+
+  <img src="img/fwd-btn.png"
+       (click)="moveToRoll()"
+       class="move-to-roll" />
+
+  <div class="title">
+    {{player.name}}
+    {{_configService.i18n("Are you ready?")}}
+  </div>
+</div>

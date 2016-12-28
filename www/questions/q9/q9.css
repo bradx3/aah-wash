@@ -1,0 +1,81 @@
+#q9 {
+  background-image: url(../img/orange-bg.png);
+}
+
+#q9 .base-character, #q9 .success-character, #q9 .fail-character {
+  bottom: 3px;
+  left: 10px;
+  width: 400px;
+  z-index: 10;
+}
+
+#q9 .base-character {
+  display: block;
+}
+
+#q9 .success-character,
+#q9 .fail-character,
+#q9 .toilet,
+#q9 .star1, #q9 .star2, #q9 .star3 {
+  display: none;
+}
+
+#q9 .grass {
+  bottom: 60px;
+  width: 150px;
+}
+
+#q9.marked.correct .base-character {
+  display: none;
+}
+
+#q9.marked.correct .success-character {
+  bottom: 7px;
+  display: block;
+  left: 0px;
+  width: 350px;
+}
+
+#q9.marked.correct .toilet {
+  bottom: 50px;
+  display: block;
+  left: 0;
+  width: 400px;
+}
+
+#q9.marked.correct .star1 {
+  bottom: 265px;
+  display: block;
+  left: 60px;
+  transform: rotate(45deg);
+  width: 50px;
+  z-index: 20;
+}
+
+#q9.marked.correct .star2 {
+  bottom: 275px;
+  display: block;
+  left: 175px;
+  transform: rotate(15deg);
+  width: 75px;
+}
+
+#q9.marked.correct .star3 {
+  bottom: 200px;
+  display: block;
+  left: 225px;
+  transform: rotate(5deg);
+  width: 40px;
+}
+
+#q9.marked.incorrect {
+  background-image: url(../questions/q10/incorrect-bg.png);
+}
+
+#q9.marked.incorrect .base-character {
+  display: none;
+}
+
+#q9.marked.incorrect .fail-character {
+  display: block;
+}

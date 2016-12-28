@@ -1,0 +1,51 @@
+<div class="question"
+     [ngClass]="{marked: marked, correct: result, incorrect: !result}"
+     [id]="question.id"
+     *ngIf="question">
+  <div class="label">{{player.position}}</div>
+
+  <div class="stage-1" (click)="moveToQuestion()" *ngIf="stage == 1">
+    <div class="question-text">{{question.text}}</div>
+    <img class="next" src="img/fwd-btn.png" />
+  </div>
+
+  <div class="stage-2" *ngIf="stage == 2">
+    <img class="audio" src="img/audio-btn.png" (click)="playAudio()" />
+    <div class="question-text">{{question.text}}</div>
+    <div class="correct-text">{{question.correct_text}}</div>
+    <div class="incorrect-text">{{question.incorrect_text}}</div>
+
+    <div class="canvas">
+      <img *ngFor="let image of question.images"
+           src="{{image.path}}"
+           class="{{image.name}}" />
+    </div>
+    <ul class="answers-{{answers.length}}">
+      <li *ngFor="let answer of answers"
+          (click)="toggle(answer.text)"
+          [ngClass]="{selected: isSelected(answer.text), marked: marked, correct: answer.correct, incorrect: !answer.correct}">
+        <img src="{{answer.image}}" alt="{{answer.text}}" class="answer" />
+        <div class="text">{{answer.text}}</div>
+        <img src="img/{{answer.mark}}-icon.png" class="mark" />
+      </li>
+    </ul>
+    <img class="next" 
+         src="img/done-btn.png"
+         *ngIf="!marked"
+         [ngClass]="{disabled: !canCheckAnswers()}"
+         (click)="canCheckAnswers() && checkAnswers()" />
+
+    <img class="next" 
+         *ngIf="marked"
+         src="img/done-fwd.png"
+         (click)="continueGame()" />
+
+    <div id="debug">
+      {{question.id}}
+    </div>
+  </div>
+
+  <div class="stage-3" *ngIf="stage == 3" (click)="moveToNextPlayer()">
+    <img class="main-img" src="img/{{getResult()}}-bg.png" />
+  </div>
+</div>

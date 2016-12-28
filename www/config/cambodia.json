@@ -1,0 +1,867 @@
+{
+  "i18n": {
+    "Please take a picture": {
+      "text": "អ្នកលេងទី១ សូមថតរូប",
+      "audio": "assets/cambodia/i18n_Please take a picture.mp3"
+    },
+    "Enter name": {
+      "text": "សូមសរសេរឈ្មោះ",
+      "audio": "assets/cambodia/i18n_Enter name.mp3"
+    },
+    "Pass the tablet to the next player": {
+      "text": "សូមបន្តអ្នកលេងមួយទៀត",
+      "audio": "assets/cambodia/i18n_Pass the tablet to the next player.mp3"
+    },
+    "Or start game": {
+      "text": "ឬចាប់ផ្តើមលេង",
+      "audio": "assets/cambodia/i18n_Or start game.mp3"
+    },
+    "Are you ready?": {
+      "text": "តៀមខ្លួនហើយឬនៅ?",
+      "audio": "assets/cambodia/i18n_Are you ready?.mp3"
+    }
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "text": "តើអ្វីដែលអ្នកគួរធ្វើ បន្ទាប់ពីទៅបង្គន់រួច?",
+      "text_audio": "assets/cambodia/q1_text.mp3",
+      "correct_text": "ចម្លើយដែលលោកអ្នកជ្រើសរើសពិតជាត្រឹមត្រូវ សូមចូលរួមអបអរសាទរ",
+      "correct_text_audio": "assets/cambodia/q1_correct_text.mp3",
+      "incorrect_text": "ចម្លើយដែលលោកអ្នកជ្រើសរើសមិនទាន់បានត្រឹមត្រូវទេ សូមព្យាយាមម្តងទៀត",
+      "incorrect_text_audio": "assets/cambodia/q1_incorrect_text.mp3",
+      "answers": [
+        {
+          "text": "លេង​បាល់ទាត់",
+          "image": "assets/cambodia/q1_answer1.png",
+          "audio": "assets/cambodia/q1_answer1.mp3",
+          "correct": false
+        },
+        {
+          "text": "លាងសំអាតដៃរបស់អ្នកជាមួយសាប៊ូ",
+          "image": "assets/cambodia/q1_answer2.png",
+          "audio": "assets/cambodia/q1_answer2.mp3",
+          "correct": true
+        },
+        {
+          "text": "ដុសធ្មេញ​អ្នក",
+          "image": "assets/cambodia/q1_answer3.png",
+          "audio": "assets/cambodia/q1_answer3.mp3",
+          "correct": false
+        },
+        {
+          "text": "ហូបផ្លែឈើ",
+          "image": "assets/cambodia/q1_answer4.png",
+          "audio": "assets/cambodia/q1_answer4.mp3",
+          "correct": false
+        }
+      ],
+      "images": [
+        {
+          "name": "base-character",
+          "path": "assets/cambodia/q1_image_base-character.png"
+        },
+        {
+          "name": "success-character",
+          "path": "assets/cambodia/q1_image_success-character.png"
+        },
+        {
+          "name": "fail-character",
+          "path": "assets/cambodia/q1_image_fail-character.png"
+        },
+        {
+          "name": "dirt1",
+          "path": "assets/cambodia/q1_image_dirt1.png"
+        },
+        {
+          "name": "dirt2",
+          "path": "assets/cambodia/q1_image_dirt2.png"
+        },
+        {
+          "name": "bacteria1",
+          "path": "assets/cambodia/q1_image_bacteria1.png"
+        },
+        {
+          "name": "bacteria2",
+          "path": "assets/cambodia/q1_image_bacteria2.png"
+        },
+        {
+          "name": "soap",
+          "path": "assets/cambodia/q1_image_soap.png"
+        },
+        {
+          "name": "toilet-building",
+          "path": "assets/cambodia/q1_image_toilet-building.png"
+        },
+        {
+          "name": "toilet-with-tap",
+          "path": "assets/cambodia/q1_image_toilet-with-tap.png"
+        },
+        {
+          "name": "star1",
+          "path": "assets/cambodia/q1_image_star1.png"
+        },
+        {
+          "name": "star2",
+          "path": "assets/cambodia/q1_image_star2.png"
+        },
+        {
+          "name": "star3",
+          "path": "assets/cambodia/q1_image_star3.png"
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "text": "តើអ្នកលាងដៃជាមួយនឹងអ្វី?",
+      "text_audio": "assets/cambodia/q2_text.mp3",
+      "correct_text": "ចម្លើយដែលលោកអ្នកជ្រើសរើសពិតជាត្រឹមត្រូវ សូមចូលរួមអបអរសាទរ",
+      "correct_text_audio": "assets/cambodia/q2_correct_text.mp3",
+      "incorrect_text": "ចម្លើយដែលលោកអ្នកជ្រើសរើសមិនទាន់បានត្រឹមត្រូវទេ សូមព្យាយាមម្តងទៀត",
+      "incorrect_text_audio": "assets/cambodia/q2_incorrect_text.mp3",
+      "answers": [
+        {
+          "text": "សាប៊ូ",
+          "image": "assets/cambodia/q2_answer1.png",
+          "audio": "assets/cambodia/q2_answer1.mp3",
+          "correct": true
+        },
+        {
+          "text": "ដី",
+          "image": "assets/cambodia/q2_answer2.png",
+          "audio": "assets/cambodia/q2_answer2.mp3",
+          "correct": false
+        },
+        {
+          "text": "ផេះ",
+          "image": "assets/cambodia/q2_answer3.png",
+          "audio": "assets/cambodia/q2_answer3.mp3",
+          "correct": true
+        },
+        {
+          "text": "ទឹក",
+          "image": "assets/cambodia/q2_answer4.png",
+          "audio": "assets/cambodia/q2_answer4.mp3",
+          "correct": true
+        }
+      ],
+      "images": [
+        {
+          "name": "base-character",
+          "path": "assets/cambodia/q2_image_base-character.png"
+        },
+        {
+          "name": "success-character",
+          "path": "assets/cambodia/q2_image_success-character.png"
+        },
+        {
+          "name": "fail-character",
+          "path": "assets/cambodia/q2_image_fail-character.png"
+        },
+        {
+          "name": "dirt1",
+          "path": "assets/cambodia/q2_image_dirt1.png"
+        },
+        {
+          "name": "dirt2",
+          "path": "assets/cambodia/q2_image_dirt2.png"
+        },
+        {
+          "name": "bacteria1",
+          "path": "assets/cambodia/q2_image_bacteria1.png"
+        },
+        {
+          "name": "bacteria2",
+          "path": "assets/cambodia/q2_image_bacteria2.png"
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "text": "ប្រសិនបើផ្ទះរបស់អ្នកគ្មានសាប៊ូសម្រាប់លាងដៃ តើអ្នកត្រូវប្រើអ្វីជំនួស?",
+      "text_audio": "assets/cambodia/q3_text.mp3",
+      "correct_text": "ចម្លើយដែលលោកអ្នកជ្រើសរើសពិតជាត្រឹមត្រូវ សូមចូលរួមអបអរសាទរ",
+      "correct_text_audio": "assets/cambodia/q3_correct_text.mp3",
+      "incorrect_text": "ចម្លើយដែលលោកអ្នកជ្រើសរើសមិនទាន់បានត្រឹមត្រូវទេ សូមព្យាយាមម្តងទៀត",
+      "incorrect_text_audio": "assets/cambodia/q3_incorrect_text.mp3",
+      "answers": [
+        {
+          "text": "ផេះ",
+          "image": "assets/cambodia/q3_answer1.png",
+          "audio": "assets/cambodia/q3_answer1.mp3",
+          "correct": true
+        },
+        {
+          "text": "ក្រដាស់",
+          "image": "assets/cambodia/q3_answer2.png",
+          "audio": "assets/cambodia/q3_answer2.mp3",
+          "correct": false
+        },
+        {
+          "text": "ខ្សាច់",
+          "image": "assets/cambodia/q3_answer3.png",
+          "audio": "assets/cambodia/q3_answer3.mp3",
+          "correct": false
+        },
+        {
+          "text": "លាងនឹងទឹកមួយមុខ",
+          "image": "assets/cambodia/q3_answer4.png",
+          "audio": "assets/cambodia/q3_answer4.mp3",
+          "correct": false
+        }
+      ],
+      "images": [
+        {
+          "name": "base-character",
+          "path": "assets/cambodia/q3_image_base-character.png"
+        },
+        {
+          "name": "success-character",
+          "path": "assets/cambodia/q3_image_success-character.png"
+        },
+        {
+          "name": "fail-character",
+          "path": "assets/cambodia/q3_image_fail-character.png"
+        },
+        {
+          "name": "dirt1",
+          "path": "assets/cambodia/q3_image_dirt1.png"
+        },
+        {
+          "name": "dirt2",
+          "path": "assets/cambodia/q3_image_dirt2.png"
+        },
+        {
+          "name": "bacteria1",
+          "path": "assets/cambodia/q3_image_bacteria1.png"
+        },
+        {
+          "name": "bacteria2",
+          "path": "assets/cambodia/q3_image_bacteria2.png"
+        },
+        {
+          "name": "star1",
+          "path": "assets/cambodia/q3_image_star1.png"
+        },
+        {
+          "name": "star2",
+          "path": "assets/cambodia/q3_image_star2.png"
+        },
+        {
+          "name": "star3",
+          "path": "assets/cambodia/q3_image_star3.png"
+        },
+        {
+          "name": "star4",
+          "path": "assets/cambodia/q3_image_star4.png"
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "text": "អ្វីដែលអ្នកគួរតែធ្វើ មុនពេលត្រូវញ៉ាំអាហារពេលល្ងាច?",
+      "text_audio": "assets/cambodia/q4_text.mp3",
+      "correct_text": "ចម្លើយដែលលោកអ្នកជ្រើសរើសពិតជាត្រឹមត្រូវ សូមចូលរួមអបអរសាទរ",
+      "correct_text_audio": "assets/cambodia/q4_correct_text.mp3",
+      "incorrect_text": "ចម្លើយដែលលោកអ្នកជ្រើសរើសមិនទាន់បានត្រឹមត្រូវទេ សូមព្យាយាមម្តងទៀត",
+      "incorrect_text_audio": "assets/cambodia/q4_incorrect_text.mp3",
+      "answers": [
+        {
+          "text": "រាំ ",
+          "image": "assets/cambodia/q4_answer1.png",
+          "audio": "assets/cambodia/q4_answer1.mp3",
+          "correct": false
+        },
+        {
+          "text": "សម្រាក",
+          "image": "assets/cambodia/q4_answer2.png",
+          "audio": "assets/cambodia/q4_answer2.mp3",
+          "correct": false
+        },
+        {
+          "text": "សរសេរសំបុត្រ",
+          "image": "assets/cambodia/q4_answer3.png",
+          "audio": "assets/cambodia/q4_answer3.mp3",
+          "correct": false
+        },
+        {
+          "text": "លាងដៃ",
+          "image": "assets/cambodia/q4_answer4.png",
+          "audio": "assets/cambodia/q4_answer4.mp3",
+          "correct": true
+        }
+      ],
+      "images": [
+        {
+          "name": "base-character",
+          "path": "assets/cambodia/q4_image_base-character.png"
+        },
+        {
+          "name": "success-character",
+          "path": "assets/cambodia/q4_image_success-character.png"
+        },
+        {
+          "name": "fail-character",
+          "path": "assets/cambodia/q4_image_fail-character.png"
+        },
+        {
+          "name": "house",
+          "path": "assets/cambodia/q4_image_house.png"
+        },
+        {
+          "name": "star1",
+          "path": "assets/cambodia/q4_image_star1.png"
+        },
+        {
+          "name": "star2",
+          "path": "assets/cambodia/q4_image_star2.png"
+        },
+        {
+          "name": "star3",
+          "path": "assets/cambodia/q4_image_star3.png"
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "text": "តើអ្នកគួរត្រូវធ្វើអី្វ មុនពេលហូបអាហារពេលព្រឹក?",
+      "text_audio": "assets/cambodia/q5_text.mp3",
+      "correct_text": "ចម្លើយដែលលោកអ្នកជ្រើសរើសពិតជាត្រឹមត្រូវ សូមចូលរួមអបអរសាទរ",
+      "correct_text_audio": "assets/cambodia/q5_correct_text.mp3",
+      "incorrect_text": "ចម្លើយដែលលោកអ្នកជ្រើសរើសមិនទាន់បានត្រឹមត្រូវទេ សូមព្យាយាមម្តងទៀត",
+      "incorrect_text_audio": "assets/cambodia/q5_incorrect_text.mp3",
+      "answers": [
+        {
+          "text": "លេងបាល់",
+          "image": "assets/cambodia/q5_answer1.png",
+          "audio": "assets/cambodia/q5_answer1.mp3",
+          "correct": false
+        },
+        {
+          "text": "ដុសធ្មេញ",
+          "image": "assets/cambodia/q5_answer2.png",
+          "audio": "assets/cambodia/q5_answer2.mp3",
+          "correct": false
+        },
+        {
+          "text": "ហូបផ្លែស្វាយ",
+          "image": "assets/cambodia/q5_answer3.png",
+          "audio": "assets/cambodia/q5_answer3.mp3",
+          "correct": false
+        },
+        {
+          "text": "លាងដៃ",
+          "image": "assets/cambodia/q5_answer4.png",
+          "audio": "assets/cambodia/q5_answer4.mp3",
+          "correct": true
+        }
+      ],
+      "images": [
+        {
+          "name": "base-character",
+          "path": "assets/cambodia/q5_image_base-character.png"
+        },
+        {
+          "name": "success-character",
+          "path": "assets/cambodia/q5_image_success-character.png"
+        },
+        {
+          "name": "fail-character",
+          "path": "assets/cambodia/q5_image_fail-character.png"
+        },
+        {
+          "name": "house",
+          "path": "assets/cambodia/q5_image_house.png"
+        }
+      ]
+    },
+    {
+      "id": "q6",
+      "text": "ប្អូនប្រុសរបស់អ្នកទើបមកពីលេងឃ្លី ហើយគាត់ត្រូវទៅហូបអាហារថ្ងៃត្រង់។ តើអ្នកប្រាប់ប្អូនប្រុសអ្នកឲ្យធ្វើអ្វី មុនពេលទៅហូបបាយ?",
+      "text_audio": "assets/cambodia/q6_text.mp3",
+      "correct_text": "ចម្លើយដែលលោកអ្នកជ្រើសរើសពិតជាត្រឹមត្រូវ សូមចូលរួមអបអរសាទរ",
+      "correct_text_audio": "assets/cambodia/q6_correct_text.mp3",
+      "incorrect_text": "ចម្លើយដែលលោកអ្នកជ្រើសរើសមិនទាន់បានត្រឹមត្រូវទេ សូមព្យាយាមម្តងទៀត",
+      "incorrect_text_audio": "assets/cambodia/q6_incorrect_text.mp3",
+      "answers": [
+        {
+          "text": "លេងបាល់",
+          "image": "assets/cambodia/q6_answer1.png",
+          "audio": "assets/cambodia/q6_answer1.mp3",
+          "correct": false
+        },
+        {
+          "text": "ដុសធ្មេញ",
+          "image": "assets/cambodia/q6_answer2.png",
+          "audio": "assets/cambodia/q6_answer2.mp3",
+          "correct": false
+        },
+        {
+          "text": "ហូបផ្លែស្វាយ",
+          "image": "assets/cambodia/q6_answer3.png",
+          "audio": "assets/cambodia/q6_answer3.mp3",
+          "correct": false
+        },
+        {
+          "text": "លាងដៃ",
+          "image": "assets/cambodia/q6_answer4.png",
+          "audio": "assets/cambodia/q6_answer4.mp3",
+          "correct": true
+        }
+      ],
+      "images": [
+        {
+          "name": "base-character",
+          "path": "assets/cambodia/q6_image_base-character.png"
+        },
+        {
+          "name": "success-character",
+          "path": "assets/cambodia/q6_image_success-character.png"
+        },
+        {
+          "name": "fail-character",
+          "path": "assets/cambodia/q6_image_fail-character.png"
+        },
+        {
+          "name": "cloud-sun",
+          "path": "assets/cambodia/q6_image_cloud-sun.png"
+        },
+        {
+          "name": "fruit-basket",
+          "path": "assets/cambodia/q6_image_fruit-basket.png"
+        },
+        {
+          "name": "star1",
+          "path": "assets/cambodia/q6_image_star1.png"
+        },
+        {
+          "name": "star2",
+          "path": "assets/cambodia/q6_image_star2.png"
+        },
+        {
+          "name": "star3",
+          "path": "assets/cambodia/q6_image_star3.png"
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "text": "តើអ្នកត្រូវតែធ្វើអ្វី មុនពេលទៅញុំាអាហារថ្ងៃត្រង់?",
+      "text_audio": "assets/cambodia/q7_text.mp3",
+      "correct_text": "ចម្លើយដែលលោកអ្នកជ្រើសរើសពិតជាត្រឹមត្រូវ សូមចូលរួមអបអរសាទរ",
+      "correct_text_audio": "assets/cambodia/q7_correct_text.mp3",
+      "incorrect_text": "ចម្លើយដែលលោកអ្នកជ្រើសរើសមិនទាន់បានត្រឹមត្រូវទេ សូមព្យាយាមម្តងទៀត",
+      "incorrect_text_audio": "assets/cambodia/q7_incorrect_text.mp3",
+      "answers": [
+        {
+          "text": "លេងបាល់",
+          "image": "assets/cambodia/q7_answer1.png",
+          "audio": "assets/cambodia/q7_answer1.mp3",
+          "correct": false
+        },
+        {
+          "text": "ដុសធ្មេញ",
+          "image": "assets/cambodia/q7_answer2.png",
+          "audio": "assets/cambodia/q7_answer2.mp3",
+          "correct": false
+        },
+        {
+          "text": "ហូបផ្លែស្វាយ",
+          "image": "assets/cambodia/q7_answer3.png",
+          "audio": "assets/cambodia/q7_answer3.mp3",
+          "correct": false
+        },
+        {
+          "text": "លាងដៃ",
+          "image": "assets/cambodia/q7_answer4.png",
+          "audio": "assets/cambodia/q7_answer4.mp3",
+          "correct": true
+        }
+      ],
+      "images": [
+        {
+          "name": "base-character",
+          "path": "assets/cambodia/q7_image_base-character.png"
+        },
+        {
+          "name": "success-character",
+          "path": "assets/cambodia/q7_image_success-character.png"
+        },
+        {
+          "name": "fail-character",
+          "path": "assets/cambodia/q7_image_fail-character.png"
+        },
+        {
+          "name": "house",
+          "path": "assets/cambodia/q7_image_house.png"
+        },
+        {
+          "name": "star1",
+          "path": "assets/cambodia/q7_image_star1.png"
+        },
+        {
+          "name": "star2",
+          "path": "assets/cambodia/q7_image_star2.png"
+        },
+        {
+          "name": "star3",
+          "path": "assets/cambodia/q7_image_star3.png"
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "text": "តើអ្នកត្រូវទៅកន្លែងណា ប្រសិនបើអ្នកចង់ជុះអាចម៍?",
+      "text_audio": "assets/cambodia/q8_text.mp3",
+      "correct_text": "ចម្លើយដែលលោកអ្នកជ្រើសរើសពិតជាត្រឹមត្រូវ សូមចូលរួមអបអរសាទរ",
+      "correct_text_audio": "assets/cambodia/q8_correct_text.mp3",
+      "incorrect_text": "ចម្លើយដែលលោកអ្នកជ្រើសរើសមិនទាន់បានត្រឹមត្រូវទេ សូមព្យាយាមម្តងទៀត",
+      "incorrect_text_audio": "assets/cambodia/q8_incorrect_text.mp3",
+      "answers": [
+        {
+          "text": "ទៅជិតទន្លេ",
+          "image": "assets/cambodia/q8_answer1.png",
+          "audio": "assets/cambodia/q8_answer1.mp3",
+          "correct": false
+        },
+        {
+          "text": "ទៅក្រោយដើម",
+          "image": "assets/cambodia/q8_answer2.png",
+          "audio": "assets/cambodia/q8_answer2.mp3",
+          "correct": false
+        },
+        {
+          "text": "ទៅក្រោយផ្ទះ",
+          "image": "assets/cambodia/q8_answer3.png",
+          "audio": "assets/cambodia/q8_answer3.mp3",
+          "correct": false
+        },
+        {
+          "text": "ចូលក្នុងបង្គន់",
+          "image": "assets/cambodia/q8_answer4.png",
+          "audio": "assets/cambodia/q8_answer4.mp3",
+          "correct": true
+        }
+      ],
+      "images": [
+        {
+          "name": "base-character",
+          "path": "assets/cambodia/q8_image_base-character.png"
+        },
+        {
+          "name": "success-character",
+          "path": "assets/cambodia/q8_image_success-character.png"
+        },
+        {
+          "name": "fail-character",
+          "path": "assets/cambodia/q8_image_fail-character.png"
+        },
+        {
+          "name": "grass",
+          "path": "assets/cambodia/q8_image_grass.png"
+        },
+        {
+          "name": "toilet",
+          "path": "assets/cambodia/q8_image_toilet.png"
+        },
+        {
+          "name": "star1",
+          "path": "assets/cambodia/q8_image_star1.png"
+        },
+        {
+          "name": "star2",
+          "path": "assets/cambodia/q8_image_star2.png"
+        },
+        {
+          "name": "star3",
+          "path": "assets/cambodia/q8_image_star3.png"
+        }
+      ]
+    },
+    {
+      "id": "q9",
+      "text": "តើអ្នកណាំខ្លះក្នុងគ្រួសាររបស់អ្នក ដែលត្រូវលាងដៃមុនពេលហូបអាហារ",
+      "text_audio": "assets/cambodia/q9_text.mp3",
+      "correct_text": "ចម្លើយដែលលោកអ្នកជ្រើសរើសពិតជាត្រឹមត្រូវ សូមចូលរួមអបអរសាទរ",
+      "correct_text_audio": "assets/cambodia/q9_correct_text.mp3",
+      "incorrect_text": "ចម្លើយដែលលោកអ្នកជ្រើសរើសមិនទាន់បានត្រឹមត្រូវទេ សូមព្យាយាមម្តងទៀត",
+      "incorrect_text_audio": "assets/cambodia/q9_incorrect_text.mp3",
+      "answers": [
+        {
+          "text": "ក្មេងប្រុស",
+          "image": "assets/cambodia/q9_answer1.png",
+          "audio": "assets/cambodia/q9_answer1.mp3",
+          "correct": true
+        },
+        {
+          "text": "ឪពុក",
+          "image": "assets/cambodia/q9_answer2.png",
+          "audio": "assets/cambodia/q9_answer2.mp3",
+          "correct": true
+        },
+        {
+          "text": "ម្តាយ",
+          "image": "assets/cambodia/q9_answer3.png",
+          "audio": "assets/cambodia/q9_answer3.mp3",
+          "correct": true
+        },
+        {
+          "text": "ក្មេងស្រី",
+          "image": "assets/cambodia/q9_answer4.png",
+          "audio": "assets/cambodia/q9_answer4.mp3",
+          "correct": true
+        }
+      ],
+      "images": [
+        {
+          "name": "base-character",
+          "path": "assets/cambodia/q9_image_base-character.png"
+        },
+        {
+          "name": "success-character",
+          "path": "assets/cambodia/q9_image_success-character.png"
+        },
+        {
+          "name": "fail-character",
+          "path": "assets/cambodia/q9_image_fail-character.png"
+        },
+        {
+          "name": "star1",
+          "path": "assets/cambodia/q9_image_star1.png"
+        },
+        {
+          "name": "star2",
+          "path": "assets/cambodia/q9_image_star2.png"
+        },
+        {
+          "name": "star3",
+          "path": "assets/cambodia/q9_image_star3.png"
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "text": "តើអ្នកណាខ្លះក្នុងគ្រួសាររបស់អ្នក ដែលត្រូវលាងដៃបន្ទាប់ពីចេញពីបង្គន់រួច?",
+      "text_audio": "assets/cambodia/q10_text.mp3",
+      "correct_text": "ចម្លើយដែលលោកអ្នកជ្រើសរើសពិតជាត្រឹមត្រូវ សូមចូលរួមអបអរសាទរ",
+      "correct_text_audio": "assets/cambodia/q10_correct_text.mp3",
+      "incorrect_text": "ចម្លើយដែលលោកអ្នកជ្រើសរើសមិនទាន់បានត្រឹមត្រូវទេ សូមព្យាយាមម្តងទៀត",
+      "incorrect_text_audio": "assets/cambodia/q10_incorrect_text.mp3",
+      "answers": [
+        {
+          "text": "ក្មេងប្រុស",
+          "image": "assets/cambodia/q10_answer1.png",
+          "audio": "assets/cambodia/q10_answer1.mp3",
+          "correct": true
+        },
+        {
+          "text": "ឪពុក",
+          "image": "assets/cambodia/q10_answer2.png",
+          "audio": "assets/cambodia/q10_answer2.mp3",
+          "correct": true
+        },
+        {
+          "text": "ម្តាយ",
+          "image": "assets/cambodia/q10_answer3.png",
+          "audio": "assets/cambodia/q10_answer3.mp3",
+          "correct": true
+        },
+        {
+          "text": "ក្មេងស្រី",
+          "image": "assets/cambodia/q10_answer4.png",
+          "audio": "assets/cambodia/q10_answer4.mp3",
+          "correct": true
+        }
+      ],
+      "images": [
+        {
+          "name": "base-character",
+          "path": "assets/cambodia/q10_image_base-character.png"
+        },
+        {
+          "name": "success-character",
+          "path": "assets/cambodia/q10_image_success-character.png"
+        },
+        {
+          "name": "fail-character",
+          "path": "assets/cambodia/q10_image_fail-character.png"
+        }
+      ]
+    },
+    {
+      "id": "q11",
+      "text": "តើអ្នកណាខ្លះដែលត្រូវប្រើប្រាស់បង្គន់​ នៅពេលដែលឈឺជុះអាចម៍?",
+      "text_audio": "assets/cambodia/q11_text.mp3",
+      "correct_text": "ចម្លើយដែលលោកអ្នកជ្រើសរើសពិតជាត្រឹមត្រូវ សូមចូលរួមអបអរសាទរ",
+      "correct_text_audio": "assets/cambodia/q11_correct_text.mp3",
+      "incorrect_text": "ចម្លើយដែលលោកអ្នកជ្រើសរើសមិនទាន់បានត្រឹមត្រូវទេ សូមព្យាយាមម្តងទៀត",
+      "incorrect_text_audio": "assets/cambodia/q11_incorrect_text.mp3",
+      "answers": [
+        {
+          "text": "គោ",
+          "image": "assets/cambodia/q11_answer1.png",
+          "audio": "assets/cambodia/q11_answer1.mp3",
+          "correct": false
+        },
+        {
+          "text": "ឆ្កែ",
+          "image": "assets/cambodia/q11_answer2.png",
+          "audio": "assets/cambodia/q11_answer2.mp3",
+          "correct": false
+        },
+        {
+          "text": "ឪពុក",
+          "image": "assets/cambodia/q11_answer3.png",
+          "audio": "assets/cambodia/q11_answer3.mp3",
+          "correct": true
+        },
+        {
+          "text": "ក្មេងស្រី",
+          "image": "assets/cambodia/q11_answer4.png",
+          "audio": "assets/cambodia/q11_answer4.mp3",
+          "correct": true
+        }
+      ],
+      "images": [
+        {
+          "name": "base-character",
+          "path": "assets/cambodia/q11_image_base-character.png"
+        },
+        {
+          "name": "success-character",
+          "path": "assets/cambodia/q11_image_success-character.png"
+        },
+        {
+          "name": "fail-character",
+          "path": "assets/cambodia/q11_image_fail-character.png"
+        }
+      ]
+    },
+    {
+      "id": "q19",
+      "text": "តើអ្នកត្រូវដូចម្តេចដើម្បីកុំឲ្យមូសខាំ?",
+      "text_audio": "assets/cambodia/q19_text.mp3",
+      "correct_text": "ចម្លើយដែលលោកអ្នកជ្រើសរើសពិតជាត្រឹមត្រូវ សូមចូលរួមអបអរសាទរ",
+      "correct_text_audio": "assets/cambodia/q19_correct_text.mp3",
+      "incorrect_text": "ចម្លើយដែលលោកអ្នកជ្រើសរើសមិនទាន់បានត្រឹមត្រូវទេ សូមព្យាយាមម្តងទៀត",
+      "incorrect_text_audio": "assets/cambodia/q19_incorrect_text.mp3",
+      "answers": [
+        {
+          "text": "បាញ់ថ្នាំមូស",
+          "image": "assets/cambodia/q19_answer1.png",
+          "audio": "assets/cambodia/q19_answer1.mp3",
+          "correct": true
+        },
+        {
+          "text": "ដេកក្នុងមុង",
+          "image": "assets/cambodia/q19_answer2.png",
+          "audio": "assets/cambodia/q19_answer2.mp3",
+          "correct": true
+        },
+        {
+          "text": "ដើរជើងទទេរពេលយប់",
+          "image": "assets/cambodia/q19_answer3.png",
+          "audio": "assets/cambodia/q19_answer3.mp3",
+          "correct": false
+        },
+        {
+          "text": "លាងដៃ",
+          "image": "assets/cambodia/q19_answer4.png",
+          "audio": "assets/cambodia/q19_answer4.mp3",
+          "correct": false
+        }
+      ],
+      "images": [
+        {
+          "name": "base-character",
+          "path": "assets/cambodia/q19_image_base-character.png"
+        },
+        {
+          "name": "success-character",
+          "path": "assets/cambodia/q19_image_success-character.png"
+        },
+        {
+          "name": "fail-character",
+          "path": "assets/cambodia/q19_image_fail-character.png"
+        },
+        {
+          "name": "star1",
+          "path": "assets/cambodia/q19_image_star1.png"
+        },
+        {
+          "name": "star2",
+          "path": "assets/cambodia/q19_image_star2.png"
+        }
+      ]
+    },
+    {
+      "id": "q22",
+      "text": "តើអ្នកត្រូវធ្វើអី្វ មុនពេលផ្តល់អាហារដល់ប្អូនរបស់អ្នក?",
+      "text_audio": "assets/cambodia/q22_text.mp3",
+      "correct_text": "ចម្លើយដែលលោកអ្នកជ្រើសរើសពិតជាត្រឹមត្រូវ សូមចូលរួមអបអរសាទរ",
+      "correct_text_audio": "assets/cambodia/q22_correct_text.mp3",
+      "incorrect_text": "ចម្លើយដែលលោកអ្នកជ្រើសរើសមិនទាន់បានត្រឹមត្រូវទេ សូមព្យាយាមម្តងទៀត",
+      "incorrect_text_audio": "assets/cambodia/q22_incorrect_text.mp3",
+      "answers": [
+        {
+          "text": "លេងបាល់",
+          "image": "assets/cambodia/q22_answer1.png",
+          "audio": "assets/cambodia/q22_answer1.mp3",
+          "correct": false
+        },
+        {
+          "text": "ដុសធ្មេញ",
+          "image": "assets/cambodia/q22_answer2.png",
+          "audio": "assets/cambodia/q22_answer2.mp3",
+          "correct": false
+        },
+        {
+          "text": "ហូបផ្លែស្វាយ",
+          "image": "assets/cambodia/q22_answer3.png",
+          "audio": "assets/cambodia/q22_answer3.mp3",
+          "correct": false
+        },
+        {
+          "text": "លាងដៃ",
+          "image": "assets/cambodia/q22_answer4.png",
+          "audio": "assets/cambodia/q22_answer4.mp3",
+          "correct": true
+        }
+      ],
+      "images": [
+        {
+          "name": "base-character",
+          "path": "assets/cambodia/q22_image_base-character.png"
+        },
+        {
+          "name": "success-character",
+          "path": "assets/cambodia/q22_image_success-character.png"
+        },
+        {
+          "name": "fail-character",
+          "path": "assets/cambodia/q22_image_fail-character.png"
+        },
+        {
+          "name": "bacteria",
+          "path": "assets/cambodia/q22_image_bacteria.png"
+        },
+        {
+          "name": "dirt",
+          "path": "assets/cambodia/q22_image_dirt.png"
+        },
+        {
+          "name": "star1",
+          "path": "assets/cambodia/q22_image_star1.png"
+        },
+        {
+          "name": "star2",
+          "path": "assets/cambodia/q22_image_star2.png"
+        },
+        {
+          "name": "star3",
+          "path": "assets/cambodia/q22_image_star3.png"
+        }
+      ]
+    }
+  ]
+}

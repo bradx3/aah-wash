@@ -1,0 +1,65 @@
+#q7 .base-character, #q7 .success-character, #q7 .fail-character {
+  bottom: 35px;
+  left: 95px;
+  width: 105px;
+  z-index: 10;
+}
+
+#q7 .base-character {
+  display: block;
+}
+
+#q7 .success-character,
+#q7 .fail-character,
+#q7 .star1, #q7 .star2, #q7 .star3 {
+  display: none;
+}
+
+#q7 .house {
+  bottom: 60px;
+  width: 460px;
+}
+
+#q7.marked.correct .base-character,
+#q7.marked.correct .house {
+  display: none;
+}
+
+#q7.marked.correct .success-character {
+  bottom: 33px;
+  display: block;
+  left: 0;
+  width: 250px;
+}
+
+#q7.marked.correct .star1 {
+  bottom: 275px;
+  display: block;
+  left: 125px;
+  transform: rotate(45deg);
+  width: 50px;
+}
+
+#q7.marked.correct .star2 {
+  bottom: 270px;
+  display: block;
+  left: 225px;
+  transform: rotate(15deg);
+  width: 75px;
+}
+
+#q7.marked.correct .star3 {
+  bottom: 150px;
+  display: block;
+  left: 325px;
+  transform: rotate(5deg);
+  width: 40px;
+}
+
+#q7.marked.incorrect .base-character {
+  display: none;
+}
+
+#q7.marked.incorrect .fail-character {
+  display: block;
+}

@@ -1,0 +1,79 @@
+#q2 .base-character, #q2 .success-character, #q2 .fail-character {
+  bottom: 25px;
+  left: 80px;
+  width: 165px;
+  z-index: 10;
+}
+
+#q2 .base-character {
+  display: block;
+  z-index: 10;
+}
+
+#q2 .success-character,
+#q2 .fail-character {
+  display: none;
+}
+
+#q2 .bacteria1 {
+  bottom: 95px;
+  left: 260px;
+  width: 45px;
+  z-index: 20;
+}
+
+#q2 .bacteria2 {
+  bottom: 150px;
+  left: 25px;
+  width: 45px;
+  z-index: 20;
+}
+
+#q2 .dirt1 {
+  bottom: 128px;
+  left: 60px;
+  width: 35px;
+  z-index: 20;
+}
+
+#q2 .dirt2 {
+  bottom: 95px;
+  left: 220px;
+  width: 35px;
+  z-index: 20;
+}
+
+#q2.marked.correct .dirt1,
+#q2.marked.correct .dirt2 {
+  display: none;
+}
+
+#q2.marked.correct .base-character {
+  display: none;
+}
+
+#q2.marked.correct .success-character {
+  display: block;
+  width: 210px;
+}
+
+#q2.marked.correct .bacteria1 {
+  bottom: 25px;
+  transform: rotate(190deg);
+}
+
+#q2.marked.correct .bacteria2 {
+  bottom: 30px;
+  transform: rotate(90deg);
+}
+
+#q2.marked.incorrect .base-character {
+  display: none;
+}
+
+#q2.marked.incorrect .fail-character {
+  bottom: 25px;
+  left: 99px;
+  display: block;
+  width: 145px;
+}

@@ -1,0 +1,35 @@
+#q11 {
+  .base-character, .success-character, .fail-character {
+    bottom: -10px;
+    left: 10px;
+    width: 400px;
+    z-index: 10;
+  }
+  .base-character {
+    display: block;
+  }
+  .success-character,
+  .fail-character {
+    display: none;
+  }
+
+  &.marked.correct {
+    .base-character {
+      display: none;
+    }
+    .success-character {
+      bottom: 25px;
+      display: block;
+      left: 0px;
+      width: 400px;
+    }
+  }
+  &.marked.incorrect {
+    .base-character {
+      display: none;
+    }
+    .fail-character {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="135px" height="480px" viewBox="0 0 135 480" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.1 (28215) - http://www.bohemiancoding.com/sketch -->
+    <title>Snake</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Snake" transform="translate(12.000000, 0.000000)">
+            <polyline id="Stroke-1" stroke="#66BB6A" stroke-width="24" points="55.3765 455.9141 55.3765 390.2871 110.7525 390.2871 110.7525 324.3621 0.0005 324.3621 0.0005 258.4371 110.7525 258.4371 110.7525 192.5121 0.0005 192.5121 0.0005 126.5881 55.3765 126.5881 55.3765 93.6251"></polyline>
+            <polygon id="Fill-3" fill="#66BB6A" points="42.2806 22.9141 68.4726 22.9141 80.7246 93.6251 30.0276 93.6251"></polygon>
+            <polygon id="Fill-4" fill="#66BB6A" points="43.3356 455.914 43.3356 479.899 67.3206 455.914"></polygon>
+            <g id="Group-9" transform="translate(49.000000, 0.899000)" stroke="#D32F2F" stroke-width="4">
+                <path d="M6.3765,22.0151 L6.3765,6.5641" id="Stroke-5"></path>
+                <polyline id="Stroke-7" points="12.4259 0.5151 6.3769 6.5641 0.3269 0.5151"></polyline>
+            </g>
+            <polygon id="Fill-10" fill="#FFFFFF" points="63.1892 61.8055 71.3322 61.8055 71.3322 69.9485"></polygon>
+            <polygon id="Fill-11" fill="#FFFFFF" points="39.4206 69.9486 39.4206 61.8056 47.5636 61.8056"></polygon>
+        </g>
+    </g>
+</svg>

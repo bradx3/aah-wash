@@ -1,0 +1,74 @@
+#q6 {
+  .base-character, .success-character, .fail-character {
+    bottom: 20px;
+    left: 180px;
+    width: 215px;
+    z-index: 10;
+  }
+  .base-character {
+    display: block;
+  }
+  .success-character,
+  .fail-character,
+  .stove,
+  .star1, .star2, .star3 {
+    display: none;
+  }
+  .fruit-basket {
+    bottom: 35px;
+    left: 100px;
+    width: 75px;
+  }
+  .cloud-sun {
+    bottom: 290px;
+    left: 85px;
+    width: 250px;
+  }
+
+  &.marked.correct {
+    .base-character,
+    .house {
+      display: none;
+    }
+    .success-character {
+      bottom: 18px;
+      display: block;
+      left: 0;
+      width: 350px;
+    }
+    .fruit-basket {
+      left: 25px;
+      z-index: 10;
+    }
+    .star1 {
+      bottom: 265px;
+      display: block;
+      left: 110px;
+      transform: rotate(45deg);
+      width: 50px;
+      z-index: 20;
+    }
+    .star2 {
+      bottom: 275px;
+      display: block;
+      left: 225px;
+      transform: rotate(15deg);
+      width: 75px;
+    }
+    .star3 {
+      bottom: 200px;
+      display: block;
+      left: 325px;
+      transform: rotate(5deg);
+      width: 40px;
+    }
+  }
+  &.marked.incorrect {
+    .base-character {
+      display: none;
+    }
+    .fail-character {
+      display: block;
+    }
+  }
+}

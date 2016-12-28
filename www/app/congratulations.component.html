@@ -1,0 +1,21 @@
+<div class="winner">
+  <player [player]="winner" class="player-large"></player>
+  <div class="title">
+    Congratulations {{winner.name}}!
+  </div>
+</div>
+<div class="finishers">
+  <div class="title">Leaderboard</div>
+  <table>
+    <tr *ngFor="let player of finishers">
+      <td>{{player.name}}</td>
+      <td>{{player.getScore()}}</td>
+    </tr>
+  </table>
+</div>
+<div class="footer">
+  <button (click)="restart()"
+          class="mdl-button mdl-js-button mdl-button--raised">
+    Play again?
+  </button>
+</div>

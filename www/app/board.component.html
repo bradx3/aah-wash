@@ -1,0 +1,17 @@
+<div class="board">
+
+  <roll></roll>
+
+  <div class="square" *ngFor="let square of squares" id="square-{{square.position}}">
+    <div class="label">{{square.label}}</div>
+    <player-list [players]="players | playerInSquare:square.position"></player-list>
+  </div>
+
+  <div class="redirects">
+    <img *ngFor="let redirect of redirects"
+         class="redirect {{redirect.type}}"
+         src="img/{{redirect.type}}.png"
+         [attr.data-start]="redirect.start"
+         [attr.data-end]="redirect.end" />
+  </div>
+</div>

@@ -1,0 +1,73 @@
+#q9 {
+  background-image: url(../img/orange-bg.png);
+
+  .base-character, .success-character, .fail-character {
+    bottom: 3px;
+    left: 10px;
+    width: 400px;
+    z-index: 10;
+  }
+  .base-character {
+    display: block;
+  }
+  .success-character,
+  .fail-character,
+  .toilet,
+  .star1, .star2, .star3 {
+    display: none;
+  }
+  .grass {
+    bottom: 60px;
+    width: 150px;
+  }
+
+  &.marked.correct {
+    .base-character {
+      display: none;
+    }
+    .success-character {
+      bottom: 7px;
+      display: block;
+      left: 0px;
+      width: 350px;
+    }
+    .toilet {
+      bottom: 50px;
+      display: block;
+      left: 0;
+      width: 400px;
+    }
+    .star1 {
+      bottom: 265px;
+      display: block;
+      left: 60px;
+      transform: rotate(45deg);
+      width: 50px;
+      z-index: 20;
+    }
+    .star2 {
+      bottom: 275px;
+      display: block;
+      left: 175px;
+      transform: rotate(15deg);
+      width: 75px;
+    }
+    .star3 {
+      bottom: 200px;
+      display: block;
+      left: 225px;
+      transform: rotate(5deg);
+      width: 40px;
+    }
+  }
+  &.marked.incorrect {
+    background-image: url(../questions/q10/incorrect-bg.png);
+
+    .base-character {
+      display: none;
+    }
+    .fail-character {
+      display: block;
+    }
+  }
+}
